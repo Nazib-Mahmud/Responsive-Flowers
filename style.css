@@ -1,3 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <400>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 * {
   margin: 0;
   padding: 0;
@@ -69,7 +80,7 @@ nav a {
   background: white;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px ;
 }
 .product-card img {
   width: 100%;
@@ -77,6 +88,7 @@ nav a {
 .product-card button {
   margin-top: 10px;
   padding: 8px;
+  
   background: #f37021;
   border: none;
   color: white;
@@ -88,7 +100,7 @@ nav a {
   display: flex;
   align-items: center;
   padding: 40px 10%;
-  background: #fff;
+  background:;
 }
 .info img {
   width: 50%;
@@ -127,36 +139,55 @@ nav a {
 
 /* Newsletter */
 .newsletter {
-  background: url('https://i.ibb.co/YXkXcjk/flower-bg.jpg') center/cover no-repeat;
-  padding: 50px 10%;
+  background-image: url('assets/news-letter-bg.png');
+  height: 533px;
   text-align: center;
   color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* CENTER CONTENT */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
+
 .newsletter input {
   padding: 10px;
-  width: 40%;
+  width: 550px;
   margin-top: 10px;
+  border: none;
+  font-size: 16px;
 }
+
 .newsletter button {
-  padding: 10px 20px;
+  padding: 10px 25px;
   background: #f37021;
   border: none;
   color: white;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  font-size: 16px;
+  /* cursor: pointer; */
 }
 
 /* Footer */
+/* Footer */
 footer {
-  background: #333;
-  color: white;
+  background: white;
+  color: #333;
   display: flex;
   justify-content: space-between;
   padding: 30px 10%;
+  font-family: Arial, sans-serif;
 }
+
 .footer-links {
   display: flex;
   gap: 40px;
 }
-.footer-links h4 {
-  margin-bottom: 10px;
+
+.img{
+  row-gap: 40px;
 }
